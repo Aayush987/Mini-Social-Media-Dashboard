@@ -1,0 +1,48 @@
+
+
+.post_add {
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+    margin: 20px 20px;
+    align-items: center;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%; */
+}
+.post_add > .title {
+    text-align: center;
+}
+.post_add > form {
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 300px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form > button {
+    border: 0;
+    padding: 10px;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+form > label {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+form > input {
+    padding: 10px;
+}
+form > #content {
+    padding: 20px;
+}
+
+form > button:hover {
+    background-color: black;
+    color: white;
+}

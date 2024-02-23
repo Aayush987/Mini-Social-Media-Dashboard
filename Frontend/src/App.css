@@ -1,0 +1,212 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftside {
+   background-color: black;
+   color: white;
+   width: 25vw;
+   height: 120vh;
+
+}
+
+.leftside > .navigations {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.leftside > h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: cursive;
+}
+
+.navigations > button,.btn {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px ;
+    cursor: pointer;
+}
+
+.navigations > button:hover,.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.rightside {
+    width: 75vw;
+    height: 100vh;
+}
+
+.rightside > .title {
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.rightside > .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 20px;
+    gap: 20px;
+}
+
+.rightside > .content > .card {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 white;
+} 
+
+.rightside > .content > .card:nth-child(1) {
+    background-color: skyblue;   
+}
+.rightside > .content > .card:nth-child(2) {
+    background-color: lightgreen;   
+}
+.rightside > .content > .card:nth-child(3) {
+    background-color: lightpink;   
+}
+
+.graphs > .line{
+    display: flex;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: black;
+}
+#postadd:hover {
+    color:black;
+}
+
+.post_add {
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+    margin: 20px 20px;
+    align-items: center;
+}
+.post_add > .title {
+    text-align: center;
+}
+.post_add > form {
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 300px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form > button {
+    border: 0;
+    padding: 10px;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+form > label {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+form > input {
+    padding: 10px;
+}
+form > #content {
+    padding: 20px;
+}
+
+form > button:hover {
+    background-color: black;
+    color: white;
+}
+.title {
+    text-align: center;
+}
+.Post {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    gap: 20px;
+    margin: 20px 20px;
+}
+
+@media (max-width: 768px) {
+    .Post {
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .leftside {
+        width: 100vw;
+        height: 120vh;
+    }
+    .rightside {
+        width: 100vw;
+        height: 100vh;
+    }
+    .rightside > .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .rightside > .content > .card {
+        width: 50vw;
+    }
+    .graphs > .line {
+        width: 500px;
+    }
+    .post_add {
+        width: 100vw;
+        height: 100vh;
+    }
+    .post_add > form {
+        width: 80vw;
+    }
+    .navigations {
+        height: 200px;
+    }
+}
+
+.PostCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.PostCard:nth-child(even) {
+    background-color: lightgreen;
+    color: white;
+}
+.PostCard:nth-child(odd) {
+    background-color: lightblue;
+    color: white;
+}
+
+
