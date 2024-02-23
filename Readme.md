@@ -4,6 +4,11 @@
 - Frontend: React.js, React google Charts
 - Backend: Django
 
+## Screenshots
+![Dashboard](Images/dashboard.jpg)
+
+![PostPage](Images/post.jpg)
+
 ## Project Description
 - This project is a demonstration of a social media dashboard with features such as dynamic display of the number of posts, likes, and comments. 
 - The line graph changes dynamically with the likes data, and the bar graph has been hardcoded with data but can be changed to dynamic data in future use.
